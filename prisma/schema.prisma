@@ -20,7 +20,7 @@ model Player {
   position String
   nationality String
 
-  team TeamPlayers[]
+  team TeamPlayers[] 
 
   @@map("player")
 }
@@ -55,7 +55,7 @@ model Match {
     locale String
     scoreboard String
     homeTeam String 
-    fk_visitorTeam_id String
+    visitorTeam String
 
     @@map("match")
 }
